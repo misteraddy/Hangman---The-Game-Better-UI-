@@ -57,7 +57,7 @@ const SignIn = ({ toggleForm }) => {
   async function fakeSignIn(email, password) {
     return new Promise((resolve) => {
       setTimeout(() => {
-        resolve({ success: email === "test@example.com" && password === "Password123" });
+        resolve({ success: true }); 
       }, 1000);
     });
   }

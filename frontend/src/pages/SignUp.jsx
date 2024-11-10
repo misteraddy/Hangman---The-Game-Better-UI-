@@ -56,7 +56,7 @@ const SignUp = ({ toggleForm }) => {
     }
 
     try {
-      const response = await fakeSignIn(email, password,confirmpassword);
+      const response = await fakeSignUp(email, password,confirmpassword);
       if (response.success) {
         console.log("User signed in successfully!");
         navigate("/home");
@@ -70,10 +70,10 @@ const SignUp = ({ toggleForm }) => {
     navigate("/home");
   }
 
-  async function fakeSignIn(email, password,confirmpassword) {
+  async function fakeSignUp(email, password,confirmpassword) {
     return new Promise((resolve) => {
       setTimeout(() => {
-        resolve({ success: email === "test@example.com" && password === "Password123" && password === confirmpassword});
+        resolve({ success: true }); 
       }, 1000);
     });
   }
