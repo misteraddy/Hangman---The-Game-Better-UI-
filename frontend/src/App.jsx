@@ -4,6 +4,8 @@ import RootLayout from "./pages/Navbar/RootLayout";
 import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./pages/DarkMode/ThemeProvider";
 import HomeContainer from "./pages/Home/HomeContainer";
+import StartGameContainer from "./pages/StartGame/StartGameContainer";
+import PlayGameContainer from "./pages/PlayGame/PlayGameContainer";
 
 
 const App = () => {
@@ -15,6 +17,8 @@ const App = () => {
           element={<RootLayout />}
         >
           <Route path="/home" element={<HomeContainer />} />
+          <Route path="/start" element={<StartGameContainer/>}/>
+          <Route path="/play" element={<PlayGameContainer />}/>
         </Route>
       </Routes>
     </ThemeProvider>

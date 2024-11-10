@@ -32,7 +32,7 @@ export default function MobileNav() {
               />
             </Link>
           </SheetHeader>
-          <nav className="flex flex-col gap-3 mt-6">
+          {/* <nav className="flex flex-col gap-3 mt-6">
             <Link to="/project" className="hover:text-blue-500">
               Project
             </Link>
@@ -42,7 +42,7 @@ export default function MobileNav() {
             <Link to="/contact" className="hover:text-blue-500">
               Contact
             </Link>
-          </nav>
+          </nav> */}
         </SheetContent>
       </Sheet>
     </div>

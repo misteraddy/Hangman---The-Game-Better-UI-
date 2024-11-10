@@ -16,7 +16,7 @@ export default function MainNav() {
           alt="logo"
         />
       </Link>
-      <nav className="flex items-center gap-3 lg:gap-4 ml-16">
+      {/* <nav className="flex items-center gap-3 lg:gap-4 ml-16">
         <Link to="/project" className="hover:text-blue-500 dark:hover:text-gray-500">
           Project
         </Link>
@@ -26,7 +26,7 @@ export default function MainNav() {
         <Link to="/contact" className="hover:text-blue-500 dark:hover:text-gray-500">
           Contact
         </Link>
-      </nav>
+      </nav> */}
     </div>
   );
 }

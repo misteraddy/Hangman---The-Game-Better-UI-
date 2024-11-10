@@ -17,10 +17,10 @@ function Home({ handleClick , handleClick2 }) {
         </CardHeader>
         <CardContent className="flex flex-col sm:flex-row justify-between items-center p-5">
           <div className="flex flex-col w-full sm:w-1/2 space-y-4 sm:space-y-6">
-            <Button className="m-4 py-2" onClick={handleClick}>
+            <Button className="m-4 py-2" onClick={handleClick2}>
               Single Player
             </Button>
-            <Button className="m-4 py-4" onClick={handleClick2}>
+            <Button className="m-4 py-4" onClick={handleClick}>
               Multi Player
             </Button>
           </div>
